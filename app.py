@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # --- הגדרות ליבה ---
 # המערכת תמשוך את המפתח אוטומטית מהגדרות ה-Environment ב-Render
-API_KEY = os.environ.get("GOOGLE_API_KEY")
+API_KEY = os.environ.get("NOAM")
 genai.configure(api_key=API_KEY)
 
 HISTORY_FILE = "chat_history.json"
