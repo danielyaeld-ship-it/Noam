@@ -35,6 +35,7 @@ model = genai.GenerativeModel(
     tools=[{"google_search_retrieval": {}}]
 )
 
+
 chat_session = model.start_chat(history=load_history(), enable_automatic_function_calling=True)
 
 # --- ממשק האתר (HTML/CSS/JS) ---
