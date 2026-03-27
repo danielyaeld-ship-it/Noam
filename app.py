@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # --- הגדרות ליבה ---
 # המערכת תמשוך את המפתח אוטומטית מהגדרות ה-Environment ב-Render
-API_KEY = os.environ.get("API_KEY")
+API_KEY = os.environ.get("GOOGLE_API_KEY")
 genai.configure(api_key=API_KEY)
 
 HISTORY_FILE = "chat_history.json"
@@ -63,7 +63,7 @@ html_code = """
     </style>
 </head>
 <body>
-    <header>הצ'אט של יאיר הגבר התותח 🚀</header>
+    <header>נעם</header>
     <div id="chat"></div>
     <div id="controls">
         <label for="img-input" id="file-label">🖼️</label>
